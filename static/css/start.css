@@ -1,0 +1,33 @@
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-width {
+    margin-bottom: 10vh;
+}
+
+#claim-form {
+    margin-top: 36px;
+}
+
+#claim-input {
+    border: 1px solid #A4B1B8;
+    background-color: var(--subtle-blue);
+    min-height: 140px;
+    font-size: var(--p);
+    resize: none;
+    overflow-y: auto;     /* Show scrollbar only when max-height is exceeded */
+    max-height: 50vh;
+}
+
+#claim-input:focus {
+    outline: none;
+    border: 1px solid var(--giga-blue);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.1);
+}
+
+#start-submit-btn {
+    width: 240px;
+}

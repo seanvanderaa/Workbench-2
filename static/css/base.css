@@ -1,0 +1,176 @@
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px); /* adjust the blur strength */
+    -webkit-backdrop-filter: blur(1px); /* for Safari support */
+}
+
+.popup-modal {
+    background-color: white;
+    width: 600px;
+}
+
+#sidebar-wrapper {
+    display: flex;
+    width: 320px;
+    padding: var(--m-lg);
+    height: 100vh;
+}
+
+#sidebar {
+    width: 100%;
+    background-color: var(--subtle-blue);
+    transition: box-shadow .4s ease, transform .2s ease-in-out;
+}
+
+#sidebar:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+#gigafact-logo-text {
+    padding-right: 4px;
+}
+
+.sidebar-actions {
+    padding: 8px;
+}
+
+/* .flex-col .small-header{
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+} */
+
+.sidebar-action {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-action:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.processing-proj-wrapper {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.processing-claim:hover {
+    cursor: not-allowed;
+    background-color: var(--hover);
+}
+
+.processing-claim-btn  {
+    border: none;
+    background-color: transparent;
+    cursor: not-allowed;
+    max-width: 100%;
+}
+
+.processing-claim-btn-text {
+    white-space: nowrap;       /* Prevents text from wrapping */
+    overflow: hidden;          /* Hides overflowed text */
+    text-overflow: ellipsis;   /* Adds the ellipsis (…) */
+    display: inline-block;
+}
+
+.prev-claims-wrapper {
+    padding: 10px;
+    padding-top: 0px;
+    min-height: 80px;
+    overflow-y: auto;
+}
+
+.prev-claims-list form {
+    align-items: center;
+}
+
+.hidden-proj-claims {
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+.proj-claim-btn {
+    border: none;
+    background-color: transparent;
+    font-family: var(--ff);
+    text-align: left;
+    display: flex;       /* or block/flex depending on your layout */
+    width: 100%;                 /* respects the w-100 you already have */
+    overflow: hidden;            /* hides the overflowing text */
+    white-space: nowrap;         /* prevents text from wrapping */
+    text-overflow: ellipsis;
+    align-items: center;
+}
+
+.proj-claim-btn.active {
+    background-color: var(--hover);
+    font-weight: 600;
+}
+
+#user-info-wrapper {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+#user-info-wrapper:hover {
+    background-color: var(--hover);
+}
+
+#user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--d-blue);
+    border-radius: 100%;
+}
+
+#user-info {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content {
+    padding: var(--m-lg);
+    overflow-y: auto;
+}
+
+.partial-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.mr-8 {
+    padding-right: 8px !important;
+}
+
+.truth-rating {
+    min-width: 12px;
+    height: 12px;
+    border-radius: 100%;    
+}
+
+.hidden-proj-claims .flex-row {
+    align-items: center;
+}
+
+#user-menu {
+    top: -50px;
+    width: calc(100% - 20px);
+    right: 10px;
+}
+
+#user-menu button {
+    background-color: var(--subtle-blue);
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+#user-menu button:hover {
+    background-color: var(--hover);
+}

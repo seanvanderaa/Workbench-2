@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Login{% endblock %}</title>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="align-center">
+    <div class="login-container p-lg br-lg trans">
+
+        <div class="flex-row align-center w-100" id="giga-logo">
+            <h3 class="m0 p-lg mr-sm" id="gigafact-logo-text"><a class="td-none col-dblue" href="#">GIGAFACT </a></h3>
+            <div class="highlight-text align-center">
+                <h3 class="m0 td-none"><a href="#" class="td-none"><span class="gradient-text">AI</span></a></h3>
+            </div>
+        </div>
+        <h3 class="text-center col-dblue">Create an Account</h3>
+        <form action="/create-account" method="post" class="flex-col gap-lg mt-sect">
+            <input class="p-md br-sm w-100 fs-sm" type="text" id="name" name="name" placeholder="Name"
+                required>
+            <input class="p-md br-sm w-100 fs-sm" type="text" id="username" name="username" placeholder="Email"
+                required>
+            <input class="p-md br-sm w-100 fs-sm" type="password" id="password" name="password" placeholder="Password"
+                required>
+            <input class="p-md br-sm w-100 fs-sm" type="password" id="password-confirm" name="password-confirm" placeholder="Confirm Password"
+                required>
+            <button type="submit" class="primary-btn primary-btn-lg w-100 flex-row gap align-center"><span class="mini-loader hidden"></span><span id="login-btn-text">Create Account</span></button>
+            <button onclick="window.location.href='/login'" class="create-account secondary-btn w-100">Cancel & Go Back</button>
+        </form>
+    </div>
+</body>
+
+</html>

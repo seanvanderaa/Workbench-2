@@ -1,0 +1,361 @@
+{% block extra_head %}
+  <!-- Page-specific stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/view_claim.css') }}">
+{% endblock %}
+
+<div class="content-width">
+    <h2 class="w-100 col-grey fw-400 mt0">Fact Check Project Title<br><span class="small-header fs-xsm fw-400"><i>Created: Sept. 1, 2025</i></span></h2>
+    <div class="section flex-col mt-sect">
+        <h4 class="small-header">CLAIM</h4>
+        <h3><b>Is there a secure process to track Arizona’s mail-in ballots?</b></h3>
+    </div>
+    <div class="section flex-row gap-lg">
+        <div class="flex-col">
+            <h4 class="small-header">VERDICT</h4>
+            <p class="ht-lgreen br-sm p-sm fit-content mb0">Mostly True</p>
+        </div>
+        <div class="flex-col">
+            <h4 class="small-header">CONFIDENCE</h4>
+            <p class="ht-red br-sm p-sm fit-content mb0">1</p>
+        </div>
+    </div>
+    <div class="section flex-col mt-sect">
+        <h4 class="small-header">SUMMARIES</h4>
+        <div id="summaries-wrapper" class="br-md flex-col">
+            <div id="summaries-header" class="flex-row gap-lg p-md">
+                <button class="tab-btn active trans pointer" id="brief-summary-btn">Brief Summary</button>
+                <button class="tab-btn trans pointer" id="detailed-summary-btn">Detailed Summary</button>
+            </div>
+            <div id="summaries-content" class="p-lg">
+                <div id="brief-summary-content">
+                    <p class="m0">Arizona provides official state and county tracking portals and notifications. Security is strong but relies on standard web authentication, vendor systems, and county practices.</p>
+                </div>
+                <div id="detailed-summary-content" class="hidden">
+                    <p class="m0">By official counts, Bloomberg’s New Housing Marketplace Plan financed about 165,000 affordable homes [nyc.gov]. De Blasio’s Housing New York surpassed 200,000 financed homes by 2021 [nyc.gov]. Combined, that’s well over 350,000. Adams announced a record 2023 with roughly 27,000 “starts” [nyc.gov], but his cumulative production since 2022 is far below the Bloomberg+de Blasio total. Independent tallies confirm predecessors together financed more than 365,000 units, dwarfing Adams’s to date [cbcny.org]. Metrics matter—press releases often cite “starts,” while the Mayor’s Management Report tracks both starts and completions [nyc.gov]. Under any common metric and timeframe, there’s no basis for saying Adams has built more than both combined.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section flex-col mt-sect">
+        <h4 class="small-header">VERIFIED FACTS</h4>
+        <div class="flex-col p-md br-md block gap">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Fact</h4>
+                <p class="fact-sect-text"><b>Arizona’s Secretary of State offers an official ballot-by-mail status lookup/tracking portal.</b></p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text">State portal lets voters check ballot mailed, received, signature verification, acceptance.</p>
+            </div>
+            <div class="fact-sect flex-col gap">
+                <h4 class="small-header">Source</h4>
+                <div class="fact-source-wrapper flex-col p-md br-md">
+                    <div class="fact-source-header flex-row flex-btw pointer gap">
+                        <div class="gap flex-col">
+                            <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                            <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="fact-source-content flex-col hidden">
+                        <div class="fact-sect flex-col">
+                            <h4 class="small-header">Key Points</h4>
+                            <ul>
+                                <li>Check the status of your ballot-by-mail.</li>
+                                <li>See when your ballot is mailed, received, and accepted.</li>
+                                <li>Signature verification status and cure information available.</li>
+                            </ul>
+                        </div>
+                        <div class="fact-sect flex-col">
+                            <h4 class="small-header">Usefulness</h4>
+                            <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+                        </div>
+                        <div class="fact-sect flex-col">
+                            <h4 class="small-header">Clarification</h4>
+                            <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="fact-source-rating m0">RATING: TRUE | CONFIDENCE: 4</h4>
+            </div>
+        </div>
+        <div class="flex-col p-md br-md block gap">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Fact</h4>
+                <p class="fact-sect-text"><b>Arizona’s Secretary of State offers an official ballot-by-mail status lookup/tracking portal.</b></p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text">State portal lets voters check ballot mailed, received, signature verification, acceptance.</p>
+            </div>
+            <div class="fact-sect flex-col gap">
+                <h4 class="small-header">Source</h4>
+                <div class="fact-source-wrapper flex-col p-md br-md">
+                    <div class="fact-source-header flex-row flex-btw pointer gap">
+                        <div class="gap flex-col">
+                            <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                            <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="fact-source-content flex-col hidden">
+                        <div class="fact-sect flex-col">
+                            <h4 class="small-header">Key Points</h4>
+                            <ul>
+                                <li>Check the status of your ballot-by-mail.</li>
+                                <li>See when your ballot is mailed, received, and accepted.</li>
+                                <li>Signature verification status and cure information available.</li>
+                            </ul>
+                        </div>
+                        <div class="fact-sect flex-col">
+                            <h4 class="small-header">Usefulness</h4>
+                            <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+                        </div>
+                        <div class="fact-sect flex-col">
+                            <h4 class="small-header">Clarification</h4>
+                            <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="fact-source-rating m0">RATING: TRUE | CONFIDENCE: 4</h4>
+            </div>
+        </div>
+    </div>
+    <div class="section flex-col mt-sect">
+        <h4 class="small-header">LEADS TO EXPLORE</h4>
+        <div class="flex-col p-md br-md block gap">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Angle</h4>
+                <p class="fact-sect-text"><b>Verify Adams’s cumulative financed and completed units through FY2024–FY2025 HPD datasets.</b></p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">To Verify</h4>
+                <p class="fact-sect-text mb0">Pull latest HPD production reports and MMR updates; sum starts/completions since Jan 2022.</p>
+            </div>
+        </div>
+        <div class="flex-col p-md br-md block gap">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Angle</h4>
+                <p class="fact-sect-text"><b>Break out new construction vs preservation to see if any sub-metric favors Adams.</b></p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">To Verify</h4>
+                <p class="fact-sect-text mb0">Compare unit types across administrations using HPD dashboards and CBC disaggregation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section flex-row mt-sect gap-lg">
+        <button id="rate-model-btn" class="primary-btn primary-btn-lg w-100">Rate the Model's Output</button>
+        <button id="open-sources-btn" class="secondary-btn secondary-btn-lg w-100">View All Sources</button>
+    </div>
+</div>
+<div id="sources-sidepanel" class="pos-abs flex-col p-lg gap">
+    <button class="secondary-btn" id="close-sources-btn">Close Sources</button>
+    <div class="fact-source-wrapper flex-col p-md br-md">
+        <div class="fact-source-header flex-row flex-btw pointer gap">
+            <div class="gap flex-col">
+                <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+            </div>
+            <div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </div>
+        <div class="fact-source-content flex-col hidden">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Key Points</h4>
+                <ul>
+                    <li>Check the status of your ballot-by-mail.</li>
+                    <li>See when your ballot is mailed, received, and accepted.</li>
+                    <li>Signature verification status and cure information available.</li>
+                </ul>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Usefulness</h4>
+                <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+            </div>
+        </div>
+    </div>
+    <div class="fact-source-wrapper flex-col p-md br-md">
+        <div class="fact-source-header flex-row flex-btw pointer gap">
+            <div class="gap flex-col">
+                <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+            </div>
+            <div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </div>
+        <div class="fact-source-content flex-col hidden">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Key Points</h4>
+                <ul>
+                    <li>Check the status of your ballot-by-mail.</li>
+                    <li>See when your ballot is mailed, received, and accepted.</li>
+                    <li>Signature verification status and cure information available.</li>
+                </ul>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Usefulness</h4>
+                <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+            </div>
+        </div>
+    </div>
+    <div class="fact-source-wrapper flex-col p-md br-md">
+        <div class="fact-source-header flex-row flex-btw pointer gap">
+            <div class="gap flex-col">
+                <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+            </div>
+            <div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </div>
+        <div class="fact-source-content flex-col hidden">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Key Points</h4>
+                <ul>
+                    <li>Check the status of your ballot-by-mail.</li>
+                    <li>See when your ballot is mailed, received, and accepted.</li>
+                    <li>Signature verification status and cure information available.</li>
+                </ul>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Usefulness</h4>
+                <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="fact-source-wrapper flex-col p-md br-md">
+        <div class="fact-source-header flex-row flex-btw pointer gap">
+            <div class="gap flex-col">
+                <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+            </div>
+            <div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </div>
+        <div class="fact-source-content flex-col hidden">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Key Points</h4>
+                <ul>
+                    <li>Check the status of your ballot-by-mail.</li>
+                    <li>See when your ballot is mailed, received, and accepted.</li>
+                    <li>Signature verification status and cure information available.</li>
+                </ul>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Usefulness</h4>
+                <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+            </div>
+        </div>
+    </div>
+    <div class="fact-source-wrapper flex-col p-md br-md">
+        <div class="fact-source-header flex-row flex-btw pointer gap">
+            <div class="gap flex-col">
+                <h4 class="m0">Cybersecurity and Infrastructure Security Agency (CISA) <span>| <a class="a-text pointer fw-400" href="https://www.cisa.gov/election-security-rumor-vs-reality" target="_blank"><i>Rumor vs. Reality: Election Security</i></a></span></h4>
+                <p class="m0 col-muted fs-xsm">Published: Nov. 10, 2024</p>
+            </div>
+            <div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </div>
+        <div class="fact-source-content flex-col hidden">
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Key Points</h4>
+                <ul>
+                    <li>Check the status of your ballot-by-mail.</li>
+                    <li>See when your ballot is mailed, received, and accepted.</li>
+                    <li>Signature verification status and cure information available.</li>
+                </ul>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Usefulness</h4>
+                <p class="fact-sect-text">Primary state source confirming existence and function of tracking.</p>
+            </div>
+            <div class="fact-sect flex-col">
+                <h4 class="small-header">Clarification</h4>
+                <p class="fact-sect-text mb0">Authoritative for statewide guidance; reflects current procedures.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="rate-modal-wrapper" class="popup-modal br-md p-md pos-abs hidden">
+    <h3 class="">Fact-checker AI Feedback</h3>
+    <p class="col-grey">We use your response to help improve our platform and ensure it provides accurate responses to your claims.</p>
+
+    <form action="/submit-model-report" method="POST">
+        <!-- Hidden fields populated dynamically -->
+        <input type="hidden" name="user_email" id="user_email" value="">
+        <input type="hidden" name="claim_id" id="claim_id" value="">
+
+        <!-- Star rating -->
+        <fieldset class="mt-sect" aria-labelledby="rating-legend" class="flex-col gap">
+        <legend id="rating-legend" class="mb-sm">Rate this model output<span class="required-star">*</span></legend>
+
+        <div class="rating" role="radiogroup" aria-labelledby="rating-legend">
+            <!-- Note: radios are ordered 5->1 so CSS hover fills leftwards -->
+            <input class="sr-only" type="radio" id="rating-5" name="rating" value="5" required>
+            <label for="rating-5" aria-label="5 stars" title="Excellent">★</label>
+
+            <input class="sr-only" type="radio" id="rating-4" name="rating" value="4">
+            <label for="rating-4" aria-label="4 stars" title="Good">★</label>
+
+            <input class="sr-only" type="radio" id="rating-3" name="rating" value="3">
+            <label for="rating-3" aria-label="3 stars" title="Okay">★</label>
+
+            <input class="sr-only" type="radio" id="rating-2" name="rating" value="2">
+            <label for="rating-2" aria-label="2 stars" title="Poor">★</label>
+
+            <input class="sr-only" type="radio" id="rating-1" name="rating" value="1">
+            <label for="rating-1" aria-label="1 star" title="Bad">★</label>
+        </div>
+        </fieldset>
+
+
+
+        <!-- Problem description -->
+        <div class="mt-sect flex-col">
+        <label for="problem_content">What did the AI get wrong? What would make it better?<span class="required-star">*</span></label>
+        <textarea name="problem_content" id="problem_content" rows="4" required
+            class="w-100 br-md p-md block fs-sm" placeholder="Describe the problem here..."></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="flex-row mt-sect gap">
+            <button type="submit" id="submit-report-btn" class="primary-btn disabled">
+                Submit Report
+            </button>
+            <button type="button" id="close-model-report-btn" class="secondary-btn">
+                Cancel & Close
+            </button>
+        </div>
+    </form>
+</div>
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/view_claim.js') }}"></script>
+{% endblock %}

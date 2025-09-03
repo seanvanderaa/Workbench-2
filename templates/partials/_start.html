@@ -1,0 +1,22 @@
+{% block extra_head %}
+  <!-- Page-specific stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/start.css') }}">
+{% endblock %}
+
+<div class="content-width text-center">
+    <h3 class="w-100">Start a New Fact Check Project</h3>
+    <p class="small-header mt0">You must enter a minimum of 50 characters to start.</p>
+    <form action="#" method="get" id="claim-form">
+        <div class="pos-rel">
+            <textarea type="text" class="w-100 br-lg p-md trans" id="claim-input" name="q"
+                placeholder="Type or paste the claim(s) here..." required autofocus></textarea>
+        </div>
+        <div class="m-md align-center">
+            <button type="submit" class="align-center primary-btn trans primary-btn-lg disabled" id="start-submit-btn"><span class="mini-loader hidden mr8"></span>Start</button>
+        </div>
+    </form>
+</div>
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/start.js') }}"></script>
+{% endblock %}

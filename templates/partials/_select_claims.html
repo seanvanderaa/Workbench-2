@@ -1,0 +1,27 @@
+{% block extra_head %}
+  <!-- Page-specific stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/claims.css') }}">
+{% endblock %}
+
+<div class="content-width">
+    <h4 class="small-header">CLAIM TEXT</h4>
+    <p  class="">Original claim text...</p>
+    <div class="flex-row align-center mt-div flex-start gap">
+        <h3 class="m0">Select Claims</h3>
+        <p class="col-muted small-header">There are many claims in this text, please select the ones you want to check. Max 5.</p>
+    </div>
+    <div id="selectable-claims" class="flex-col gap">
+        <p class="p-sm br-md select-claim border-grey trans m0">Atomic claim text...</p>
+        <p class="p-sm br-md select-claim border-grey trans m0">Atomic claim text...</p>
+        <p class="p-sm br-md select-claim border-grey trans m0">Atomic claim text...</p>
+        <p class="p-sm br-md select-claim border-grey trans m0">Atomic claim text...</p>
+    </div>
+    <form action="" id="claim-selection-form" class=" w-100 flex-col align-center">
+        <button class="primary-btn primary-btn-lg align-center"><span class="mini-loader hidden mr8"></span>Submit</button>
+    </form>
+
+</div>
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/claims.js') }}"></script>
+{% endblock %}

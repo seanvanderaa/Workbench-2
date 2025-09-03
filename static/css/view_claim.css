@@ -1,0 +1,173 @@
+p,
+li {
+    color: var(--d-blue);
+    line-height: 20px;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10vh 0vw;
+}
+
+.content-width h3 {
+    font-weight: 400;
+}
+
+.section .small-header {
+    margin-bottom: 0px;
+}
+
+#summaries-header {
+    margin-top: var(--m-md);
+    background-color: var(--d-blue);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#summaries-content {
+    background-color: var(--subtle-blue);
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid var(--border-blue);
+    border-top: none;
+}
+
+.fact-sect .small-header {
+    margin-top: 0px;
+    font-size: 16px;
+    color: var(--border-blue);
+}
+
+.fact-sect-text {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.fact-source-wrapper {
+    background-color: white;
+    margin-top: var(--m-sm);
+}
+
+.fact-source-header {
+    align-items: center;
+}
+
+.fact-source-header h4 {
+    font-weight: 600;
+    color: var(--d-blue);
+}
+
+.fact-source-content {
+    margin-top: var(--m-md);
+}
+
+.fact-source-rating {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 400;
+    margin-top: var(--m-md);
+}
+
+.fact-source-header .bi-chevron-down {
+    display: inline-block;
+}
+
+#sources-sidepanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    overflow-y: auto;
+
+    transform: translateX(540px);
+    /* offscreen */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        visibility 0s linear 0.4s;
+}
+
+#sources-sidepanel.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        visibility 0s linear 0s;
+}
+
+#sources-sidepanel .fact-source-wrapper {
+    background-color: var(--subtle-blue);
+}
+
+#rate-modal-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 8px;
+}
+
+/* Visually hidden but focusable (for accessible radios) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    /* lets :hover fill leftwards */
+    gap: .25rem;
+    margin-top: 12px;
+}
+
+.rating label {
+    font-size: 1.75rem;
+    line-height: 1;
+    color: #c7c7c7;
+    /* empty star color */
+    cursor: pointer;
+    transition: color .15s ease-in-out, transform .05s ease-in-out;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: #f5b301;
+    /* hover fill */
+}
+
+.rating input:checked~label {
+    color: #f5b301;
+    /* selected fill */
+}
+
+/* Keyboard focus ring for the currently focused radio’s label */
+.rating .sr-only:focus+label {
+    transform: scale(1.1);
+}

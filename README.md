@@ -1,6 +1,6 @@
 # Gigafact AI Fact-Checking Platform
 
-This is a Flask-based web application for collaborative fact-checking projects. Users can submit claims, select atomic claims, view fact-check results, and provide feedback on AI-generated outputs. This was designed and coded by me for Gigafact.
+This is a Flask-based web application for collaborative fact-checking projects. This is simply the UI skeleton for the app, which will be built out over the coming weeks. Users can submit claims, select atomic claims, view fact-check results, and provide feedback on AI-generated outputs. This was designed and coded by me for Gigafact.
 
 ## Features
 
